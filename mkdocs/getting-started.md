@@ -1,4 +1,4 @@
-# Getting started
+# Getting Started
 
 ## Requirements
 
@@ -54,7 +54,7 @@ You should see groups such as **Alias management**, **Git**, **System**,
 `custom/10-functions.sh`. Customise group files under `custom/`; treat `core/`
 as platform-owned.
 
-## Try the helpers
+## Try the Helpers
 
 ```bash
 add-alias other hello 'echo hi'
@@ -63,13 +63,13 @@ edit-alias hello 'echo hello'
 delete-alias hello --file
 ```
 
-## Development extras
+## Development Extras
 
 Docs and Makefile skills (optional):
 
 ```bash
 make init
-python -m pip install -r requirements.txt
+make python-install-dev
 make mkdocs-serve
 ```
 

@@ -1,6 +1,6 @@
 # Examples
 
-## Add an alias to an existing group
+## Add an Alias to an Existing Group
 
 ```bash
 add-alias system ducks 'du -sh *'
@@ -13,7 +13,7 @@ Catch-all one-offs:
 add-alias other weather 'curl -fsS wttr.in'
 ```
 
-## Create a new group
+## Create a New Group
 
 ```bash
 add-alias docker dps 'docker ps'
@@ -26,7 +26,7 @@ The first `add-alias` for an unknown group slug creates `custom/NN-docker.sh` wi
 `# @group` / `# @keys` headers. You can still create files by hand if you want
 extra keys (for example `dk`).
 
-## Edit and delete
+## Edit and Delete
 
 ```bash
 edit-alias dps 'docker ps -a'
@@ -39,13 +39,13 @@ Session-only delete (group file unchanged):
 delete-alias dps --session
 ```
 
-## Add a helper function
+## Add a Helper Function
 
 Put personal functions in `custom/10-functions.sh` (same place as the shipped
 Git wrappers and `mkcd`), then wire aliases in a group file if you want them
 listed by `list-aliases`.
 
-## Document a parameterized alias
+## Document a Parameterized Alias
 
 Hand-edit the group file (helpers do not write `@hint` yet):
 
@@ -56,7 +56,7 @@ alias dcl='docker compose logs -f'
 
 Then `reload-aliases`. `list-aliases docker` shows `dcl <service>`.
 
-## Run the registry tests
+## Run the Registry Tests
 
 From a checkout of this repo:
 
