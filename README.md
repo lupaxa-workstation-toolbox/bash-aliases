@@ -82,7 +82,7 @@ Alias files live under `core/` (platform) and `custom/` (your edits):
 
 ```bash
 make init
-make python-install-dev
+python -m pip install -r requirements.txt
 bash tests/run-tests.sh
 make mkdocs-serve
 ```

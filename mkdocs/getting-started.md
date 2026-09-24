@@ -69,7 +69,7 @@ Docs and Makefile skills (optional):
 
 ```bash
 make init
-make python-install-dev
+python -m pip install -r requirements.txt
 make mkdocs-serve
 ```
 
