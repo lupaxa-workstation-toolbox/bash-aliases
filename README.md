@@ -78,14 +78,20 @@ Alias files live under `core/` (platform) and `custom/` (your edits):
 | `custom/40-mkdocs.sh`           | MkDocs            |
 | `custom/90-other-aliases.sh`    | Other (catch-all) |
 
-## Development
+## Documentation
+
+Install, usage, reference, and examples:
+
+<https://bash-aliases.thelupaxaproject.org/>
+
+Site pages live in `mkdocs/`. Serve them from this checkout:
 
 ```bash
-make init
 python -m pip install -r requirements.txt
-bash tests/run-tests.sh
-make mkdocs-serve
+mkdocs serve
 ```
+
+After `make update`, `make mkdocs-serve` does the same.
 
 <a href="https://github.com/the-lupaxa-project">
   <img src="https://raw.githubusercontent.com/the-lupaxa-project/brand-assets/master/logos/components/footer-for-child-orgs.svg" alt="The Lupaxa Project Footer" width="100%" />
